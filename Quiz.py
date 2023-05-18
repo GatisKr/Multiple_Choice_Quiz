@@ -11,15 +11,15 @@ question_prompts = [
     "What color are strawberries?\n(a) Yellow\n(b) Red\n(c) Blue\n\n",
 ]
 
-# An array of questions that would be asked on the test
+# An array of question objects that will pass promts to user
 questions = [
     Question(question_prompts[0], "a"),
     Question(question_prompts[1], "c"),
     Question(question_prompts[2], "b"),
 ]
 
-# Function that will run the test. 
-# It has to ask user the questions and check to see if they got the answer right
+# This function refers to questions array which is a list of objects
+# It has to ask user the questions and check if they got the answer right
 
 def run_test(questions):
     score = 0
